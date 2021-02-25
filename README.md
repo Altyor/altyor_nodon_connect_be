@@ -2,4 +2,4 @@
 
 # SPECIFICATIONS 
 
-![](./Documentation/Specifications.md)
+[Specifications of the backend Architeture can be found here.](./Documentation/Specifications.md)
