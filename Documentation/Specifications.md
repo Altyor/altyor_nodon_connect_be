@@ -1,4 +1,7 @@
-# SPECIFICATIONS 
+![](./NodOn-Original.png)
+
+
+# NODON CONNECT BACKEND -  SPECIFICATIONS 
 
 This document gives an overview of the backend of the SmartPhone app **NodOn Connect**, it will specify the services we are going to use and for what purpose.
 This document is versioned and can change over time. 
@@ -65,7 +68,9 @@ A device will advertise pieces of information in the BLE frame, those informatio
 
 ![](./firestoreArchi.png)
 _Firestore Document Architecture_ 
+
 ## 2.1 - How to perform an OTA 
+
 Each device can contain one or two firmware, with the information available in the advertising frame, the App will then query a specific collection in Firestore in order to get the latest firmware. Once the latest firmware has been found, the App must download the binary from the Cloud Storage. 
 
 Once the OTA has been performed a document must be created into a Specific collection of Firestore for logs. 
