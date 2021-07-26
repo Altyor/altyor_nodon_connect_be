@@ -15,6 +15,7 @@ rm index.html
 # cat $(find ../Protocols/ -name '*.md' ) >> final.md
 
 pandoc --template=./GitHub.html5 --self-contained  --metadata pagetitle="NODON CONNECT BE - SPECIFICATIONS " Specifications.md -o index.html
+# pandoc --template=./GitHub.html5 --self-contained  --metadata pagetitle="NODON CONNECT BE - SPECIFICATIONS " SpecificationsSimplify.md -o NCV1Ota.html
 
 open index.html
 
